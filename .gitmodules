@@ -1,0 +1,30 @@
+[submodule "harptool"]
+	path = harptool
+	url = https://github.com/cdkersey/harptool
+[submodule "harmonica2"]
+	path = harmonica2
+	url = https://github.com/cdkersey/harmonica2
+[submodule "chdl"]
+	path = chdl
+	url = https://github.com/cdkersey/chdl
+[submodule "iqyax"]
+	path = iqyax
+	url = https://github.com/cdkersey/iqyax
+[submodule "chdl-module"]
+	path = chdl-module
+	url = https://github.com/cdkersey/chdl-module
+[submodule "chdl-stl"]
+	path = chdl-stl
+	url = https://github.com/cdkersey/chdl-stl
+[submodule "chdl-testifier"]
+	path = chdl-testifier
+	url = https://github.com/cdkersey/chdl-testifier
+[submodule "qsim"]
+	path = qsim
+	url = https://github.com/cdkersey/qsim
+[submodule "harmonica"]
+	path = harmonica
+	url = https://github.com/cdkersey/harmonica
+[submodule "qsim64"]
+	path = qsim64
+	url = https://github.com/cdkersey/qsim64
