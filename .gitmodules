@@ -28,3 +28,6 @@
 [submodule "qsim64"]
 	path = qsim64
 	url = https://github.com/cdkersey/qsim64
+[submodule "gtharp"]
+	path = gtharp
+	url = https://github.com/gtcasl/gtharp
