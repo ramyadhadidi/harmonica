@@ -31,3 +31,6 @@
 [submodule "gtharp"]
 	path = gtharp
 	url = https://github.com/gtcasl/gtharp
+[submodule "harp_compiler_infra"]
+	path = harp_compiler_infra
+	url = https://github.com/gtcasl/harp_compiler_infra

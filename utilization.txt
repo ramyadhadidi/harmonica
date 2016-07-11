@@ -1,0 +1,59 @@
+Total LUT: 331680
+Total CLB Registers: 663360
+
+unCore part: 17.44% LUT + 14.73% CLB
+
+*core: not included the ROM
+
+const unsigned W(2), // Total warps
+               L(1), // Number of SIMD lanes
+               N(32), // Number of bits in a machine word
+               R(8), // Number of GPRs/predicate registers
+               IPDOM_STACK_SZ(4), // Hardware stack used for control flow.
+               BARRIERS(4); // Supported number of simultaneous barriers
+                                    LUT       CLB registers
+7cores+HMC controller+PicoBus       25.5%     17.39%
+10cores+HMC controller+PicoBus      28.7%     18.36%
+
+
+const unsigned W(4), // Total warps
+               L(1), // Number of SIMD lanes
+               N(32), // Number of bits in a machine word
+               R(8), // Number of GPRs/predicate registers
+               IPDOM_STACK_SZ(4), // Hardware stack used for control flow.
+               BARRIERS(4); // Supported number of simultaneous barriers
+                                    LUT       CLB registers
+10cores+HMC controller+PicoBus      29.8%     19.07%
+
+
+
+const unsigned W(4), // Total warps
+               L(1), // Number of SIMD lanes
+               N(32), // Number of bits in a machine word
+               R(32), // Number of GPRs/predicate registers
+               IPDOM_STACK_SZ(4), // Hardware stack used for control flow.
+               BARRIERS(4); // Supported number of simultaneous barriers
+                                    LUT       CLB registers
+10cores+HMC controller+PicoBus      29.9%     19.10%
+
+
+
+const unsigned W(4), // Total warps
+               L(2), // Number of SIMD lanes
+               N(32), // Number of bits in a machine word
+               R(32), // Number of GPRs/predicate registers
+               IPDOM_STACK_SZ(4), // Hardware stack used for control flow.
+               BARRIERS(4); // Supported number of simultaneous barriers
+                                    LUT       CLB registers
+10cores+HMC controller+PicoBus      61.28%     28.47%
+
+
+const unsigned W(4), // Total warps
+               L(4), // Number of SIMD lanes
+               N(32), // Number of bits in a machine word
+               R(32), // Number of GPRs/predicate registers
+               IPDOM_STACK_SZ(4), // Hardware stack used for control flow.
+               BARRIERS(4); // Supported number of simultaneous barriers
+                                    LUT       CLB registers
+10cores+HMC controller+PicoBus      100.06%     36.65%
+9cores+HMC controller+PicoBus       92.03%      35.57%
