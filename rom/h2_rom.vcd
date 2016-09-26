@@ -1,0 +1,21 @@
+$timescale 1 ns $end
+$var reg 1 imem_req_ready imem_req_ready $end
+$var reg 8 imem_resp_contents_data_0 imem_resp_contents_data_0 $end
+$var reg 8 imem_resp_contents_data_1 imem_resp_contents_data_1 $end
+$var reg 8 imem_resp_contents_data_2 imem_resp_contents_data_2 $end
+$var reg 8 imem_resp_contents_data_3 imem_resp_contents_data_3 $end
+$var reg 1 imem_resp_contents_llsc imem_resp_contents_llsc $end
+$var reg 1 imem_resp_contents_llsc_suc imem_resp_contents_llsc_suc $end
+$var reg 1 imem_resp_contents_wr imem_resp_contents_wr $end
+$var reg 1 imem_resp_valid imem_resp_valid $end
+$enddefinitions $end
+#0
+1imem_req_ready
+b00000000 imem_resp_contents_data_0
+b00000000 imem_resp_contents_data_1
+b00000000 imem_resp_contents_data_2
+b00000000 imem_resp_contents_data_3
+0imem_resp_contents_llsc
+0imem_resp_contents_llsc_suc
+0imem_resp_contents_wr
+0imem_resp_valid

@@ -1,0 +1,198 @@
+inputs
+  imem_req_contents_addr 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198
+  imem_req_contents_data_0 199 200 201 202 203 204 205 206
+  imem_req_contents_data_1 207 208 209 210 211 212 213 214
+  imem_req_contents_data_2 215 216 217 218 219 220 221 222
+  imem_req_contents_data_3 223 224 225 226 227 228 229 230
+  imem_req_contents_llsc 231
+  imem_req_contents_mask 232 233 234 235
+  imem_req_contents_wr 236
+  imem_req_valid 237
+  imem_resp_ready 238
+outputs
+  imem_req_ready 16
+  imem_resp_contents_data_0 137 138 139 140 141 142 143 144
+  imem_resp_contents_data_1 145 146 147 148 149 150 151 152
+  imem_resp_contents_data_2 153 154 155 156 157 158 159 160
+  imem_resp_contents_data_3 161 162 163 164 165 166 167 168
+  imem_resp_contents_llsc 244
+  imem_resp_contents_llsc_suc 244
+  imem_resp_contents_wr 244
+  imem_resp_valid 14
+inout
+design
+  reg 10 0
+  inv 236 1
+  nand 237 16 2
+  inv 2 3
+  nand 3 1 4
+  inv 4 5
+  nand 0 238 6
+  inv 0 7
+  nand 7 5 8
+  nand 8 239 9
+  nand 9 8 10
+  nand 6 0 11
+  reg 5 12
+  inv 12 13
+  nand 13 7 14
+  inv 238 15
+  nand 0 15 16
+  inv 171 17
+  nand 169 170 18
+  inv 18 19
+  nand 17 19 20
+  inv 20 21
+  inv 170 22
+  nand 22 171 23
+  inv 172 24
+  nand 23 24 25
+  nand 170 171 26
+  inv 26 27
+  nand 169 27 28
+  inv 28 29
+  nand 28 24 30
+  nand 169 171 31
+  nand 31 24 32
+  inv 169 33
+  nand 33 170 34
+  inv 34 35
+  nand 17 35 36
+  nand 33 171 37
+  inv 37 38
+  nand 22 38 39
+  nand 36 39 40
+  inv 30 41
+  inv 40 42
+  nand 42 41 43
+  nand 26 24 44
+  nand 22 169 45
+  inv 45 46
+  nand 17 46 47
+  nand 47 39 48
+  inv 48 49
+  nand 49 41 50
+  nand 17 22 51
+  inv 32 52
+  nand 51 52 53
+  nand 33 27 54
+  inv 54 55
+  nand 18 24 56
+  inv 56 57
+  nand 23 57 58
+  inv 51 59
+  nand 24 59 60
+  nand 47 34 61
+  inv 61 62
+  nand 60 62 63
+  nand 5 21 64
+  nand 4 137 65
+  nand 65 64 66
+  nand 4 138 67
+  nand 5 25 68
+  nand 4 139 69
+  nand 69 68 70
+  nand 5 30 71
+  nand 4 140 72
+  nand 72 71 73
+  nand 5 172 74
+  nand 4 141 75
+  nand 75 74 76
+  nand 5 32 77
+  nand 4 142 78
+  nand 78 77 79
+  nand 4 143 80
+  nand 80 77 81
+  nand 4 144 82
+  nand 82 71 83
+  nand 4 145 84
+  nand 84 71 85
+  nand 4 146 86
+  nand 86 71 87
+  nand 4 147 88
+  nand 88 71 89
+  nand 4 148 90
+  nand 90 71 91
+  nand 4 149 92
+  nand 92 71 93
+  nand 4 150 94
+  nand 94 71 95
+  nand 4 151 96
+  nand 96 71 97
+  nand 4 152 98
+  nand 98 71 99
+  nand 5 43 100
+  nand 4 153 101
+  nand 101 100 102
+  nand 5 44 103
+  nand 4 154 104
+  nand 104 103 105
+  nand 4 155 106
+  nand 106 71 107
+  nand 5 50 108
+  nand 4 156 109
+  nand 109 108 110
+  nand 4 157 111
+  nand 111 77 112
+  nand 4 158 113
+  nand 113 71 114
+  nand 5 53 115
+  nand 4 159 116
+  nand 116 115 117
+  nand 5 55 118
+  nand 4 160 119
+  nand 119 118 120
+  nand 4 161 121
+  nand 121 4 122
+  nand 4 162 123
+  nand 123 71 124
+  nand 5 58 125
+  nand 4 163 126
+  nand 126 125 127
+  nand 5 63 128
+  nand 4 164 129
+  nand 129 128 130
+  nand 4 165 131
+  nand 4 166 132
+  nand 4 167 133
+  nand 5 29 134
+  nand 4 168 135
+  nand 135 134 136
+  reg 66 137
+  reg 240 138
+  reg 70 139
+  reg 73 140
+  reg 76 141
+  reg 79 142
+  reg 81 143
+  reg 83 144
+  reg 85 145
+  reg 87 146
+  reg 89 147
+  reg 91 148
+  reg 93 149
+  reg 95 150
+  reg 97 151
+  reg 99 152
+  reg 102 153
+  reg 105 154
+  reg 107 155
+  reg 110 156
+  reg 112 157
+  reg 114 158
+  reg 117 159
+  reg 120 160
+  reg 122 161
+  reg 124 162
+  reg 127 163
+  reg 130 164
+  reg 241 165
+  reg 242 166
+  reg 243 167
+  reg 136 168
+  inv 11 239
+  inv 67 240
+  inv 131 241
+  inv 132 242
+  inv 133 243
+  lit0 244
